@@ -36,7 +36,7 @@ if st.button("Analyze"):
     nlp_pipeline = load_model(language)
     result = nlp_pipeline(user_input)
     label = result[0]['label']
-    confidence = result[0]['score']
+    # confidence = result[0]['score']
     
     # Map the model output label to the custom label
     custom_label = labels.get(label, "Unknown")
