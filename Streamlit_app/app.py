@@ -23,7 +23,7 @@ def load_model(language):
     return nlp_pipeline
 
 # Create the Streamlit app
-st.title("Sentiment Analysis with Hugging Face and Streamlit")
+st.title("Homophobia and Transphobia Identification for Social Media Texts")
 
 st.write("Select a language and enter some text to analyze the sentiment:")
 
