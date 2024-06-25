@@ -42,4 +42,4 @@ if st.button("Analyze"):
     custom_label = labels.get(label, "Unknown")
     
     st.write("Sentiment:", custom_label)
-    st.write("Confidence Score:", confidence)
+    # st.write("Confidence Score:", confidence)
