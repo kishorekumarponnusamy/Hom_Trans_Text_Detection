@@ -23,7 +23,7 @@ def load_model(language):
     return nlp_pipeline
 
 # Create the Streamlit app
-st.title("Sentiment Analysis with Hugging Face and Streamlit")
+st.title("Homophobia and Transphobia Identification for Social Media Texts")
 
 st.write("Select a language and enter some text to analyze the sentiment:")
 
@@ -36,10 +36,10 @@ if st.button("Analyze"):
     nlp_pipeline = load_model(language)
     result = nlp_pipeline(user_input)
     label = result[0]['label']
-    confidence = result[0]['score']
+    # confidence = result[0]['score']
     
     # Map the model output label to the custom label
     custom_label = labels.get(label, "Unknown")
     
     st.write("Sentiment:", custom_label)
-    st.write("Confidence Score:", confidence)
+    # st.write("Confidence Score:", confidence)
